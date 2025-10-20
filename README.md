@@ -1,2 +1,2 @@
-# OperaGX-CyberPunkTheme
-My custom OperaGX &amp; CyberPunk theme for BetterDiscord
+# OperaGX-CyberPunk&TransparencyTheme
+My custom OperaGX &amp; CyberPunk theme &amp; Transparency for BetterDiscord
