@@ -3186,27 +3186,23 @@ code.inline {
 */🌈 STATUS GLOW EFFECTS FOR USER AVATARS========⚙️ MISC STYLING / EXPERIMENTAL*/
 */==========================================*/===============================*/
 
-/* ONLINE */
-rect[mask*="status-online"] {
-  fill: #43a25a !important;
-  transform: scale(1.1);
+/* Neon Glow for Avatar Statuses */
+.pointerEvents__44b0c[mask*="status-online"] {
+    fill: #1df594 !important; /* online green */
+    filter: drop-shadow(0 0 6px #1df594) drop-shadow(0 0 10px #1df594);
 }
 
-/* IDLE */
-rect[mask*="status-idle"] {
-  fill: #faa61a !important;
-  transform: scale(1.1);
+.pointerEvents__44b0c[mask*="status-idle"] {
+    fill: #faa61a !important; /* idle orange */
+    filter: drop-shadow(0 0 6px #faa61a) drop-shadow(0 0 10px #faa61a);
 }
 
-/* DND */
-rect[mask*="status-dnd"] {
-  fill: #f04747 !important;
-  transform: scale(1.1);
+.pointerEvents__44b0c[mask*="status-dnd"] {
+    fill: #f04747 !important; /* DND red */
+    filter: drop-shadow(0 0 6px #f04747) drop-shadow(0 0 10px #f04747);
 }
 
-/* INVISIBLE / OFFLINE */
-rect[mask*="status-invisible"],
-rect[mask*="status-offline"] {
-  fill: #747f8d !important;
-  transform: scale(1.1);
+.pointerEvents__44b0c[mask*="status-invisible"] {
+    fill: #636b75 !important; /* invisible gray */
+    filter: drop-shadow(0 0 6px #636b75) drop-shadow(0 0 10px #636b75);
 }
