@@ -461,7 +461,7 @@ html #app-mount:before,
 }
 
 .chatContent_f75fb0 {
-  border-right: var(--border-color-accent-1);
+  border-right: rgba(0,0,0, 0.5);
 }
 
 .peopleColumn__133bf .searchBar__5ec2f.container__33507.medium__5b9a9 {
