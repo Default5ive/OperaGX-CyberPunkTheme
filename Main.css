@@ -3133,25 +3133,25 @@ code.inline {
    🧱 GENERAL BACKGROUND / TRANSPARENCY
    =============================== */
 #app-mount, .theme-dark, .bg__XXX {
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  background: rgba(0, 0, 0, 0); /* semi-transparent black (-Alpha- (0.6) is the original)*/
 }
 
 /* ===============================
    💬 CHANNEL LIST & UNREAD EFFECTS
    =============================== */
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32 {
-  background-color: rgba(var(--accent-color-1), 0.15);
+  background-color: rgba(var(0,0,0), 0.15);
 }
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32:hover {
-  background-color: rgba(var(--accent-color-1), 0.25);
+  background-color: rgba(var(127.5,0,0), 0.25);
 }
 
 /* ===============================
    🟢 SELECTED / ACTIVE CHANNELS
    =============================== */
 #app-mount .modeSelected__2ea32 .link__2ea32 {
-  background-color: rgba(var(--accent-color-1), 0.35);
-  border-left: 2px solid rgba(var(--accent-color-1), 1);
+  background-color: rgba(var(--accent-color-1), 0.2); /* darker/lower alpha for better readability */
+  border-left: 2px solid rgba(var(--accent-color-1), 0.8); /* slightly less bright border */
 }
 
 /* ===============================
