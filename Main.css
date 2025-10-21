@@ -28,8 +28,11 @@
     --rs-offline-color: #636b75;
     --rs-streaming-color: #643da7;
     --rs-invisible-color: #636b75;
+    --rs-self-speaking-colour: #57d39b; /* default speaking glow */ 
     --rs-phone-visible: block; /* set to none if you want to hide the mobile icon */
     --rs-phone-color: var(--rs-online-color);
+    --rs-version: "2.0.11";
+    --rs-avatar-shape: 50%;
 }
 
 .theme-light,
