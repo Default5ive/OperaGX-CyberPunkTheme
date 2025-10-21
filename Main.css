@@ -2847,6 +2847,10 @@ code.inline {
   border-right: var(--border-color-accent-1);
 }
 
+[aria-label^="Messages in"] {
+    background-color: rgba(0, 0, 0, 0.3); /* slightly black and transparent */
+}
+
 .container__01ae2 {
   background: transparent;
 }
