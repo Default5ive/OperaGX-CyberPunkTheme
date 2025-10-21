@@ -2848,7 +2848,7 @@ code.inline {
 }
 
 [aria-label^="Messages in"] {
-    background-color: rgba(0, 0, 0, 0.3); /* slightly black and transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* slightly black and transparent */
 }
 
 .container__01ae2 {
