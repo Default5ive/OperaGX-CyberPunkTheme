@@ -3181,7 +3181,63 @@ code.inline {
   color: rgb(var(--fullwhite-font));
 }
 
-/* ===============================
-   ⚙️ MISC STYLING / EXPERIMENTAL
-   =============================== */
-/* Put temporary edits here */
+/* ==========================================/*===============================*/
+*/ =====🌈 STATUS GLOW EFFECTS FOR USER AVATARS ⚙️ ========⚙️ MISC STYLING / EXPERIMENTAL ⚙️ ========*/
+*/==========================================*/===============================*/
+
+/* 🟢 ONLINE */
+rect[mask="url(#svg-mask-status-online)"] {
+  filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a);
+  animation: statusGlowOnline 2s infinite ease-in-out;
+}
+@keyframes statusGlowOnline {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #43a25a) drop-shadow(0 0 16px #43a25a);
+  }
+}
+
+/* 🌙 IDLE */
+rect[mask="url(#svg-mask-status-idle)"] {
+  filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a);
+  animation: statusGlowIdle 2s infinite ease-in-out;
+}
+@keyframes statusGlowIdle {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #faa81a) drop-shadow(0 0 16px #faa81a);
+  }
+}
+
+/* 🔴 DO NOT DISTURB */
+rect[mask="url(#svg-mask-status-dnd)"] {
+  filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245);
+  animation: statusGlowDND 2s infinite ease-in-out;
+}
+@keyframes statusGlowDND {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #ed4245) drop-shadow(0 0 16px #ed4245);
+  }
+}
+
+/* ⚫ INVISIBLE */
+rect[mask="url(#svg-mask-status-invisible)"] {
+  filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c);
+  animation: statusGlowInvisible 2s infinite ease-in-out;
+}
+@keyframes statusGlowInvisible {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #4f545c) drop-shadow(0 0 16px #4f545c);
+  }
+}
+
