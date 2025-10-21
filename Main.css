@@ -3141,103 +3141,104 @@ code.inline {
    🧱 GENERAL BACKGROUND / TRANSPARENCY
    =============================== */
 #app-mount, .theme-dark, .bg__XXX {
-  background: rgba(0, 0, 0, 0); /* semi-transparent black (-Alpha- (0.6) is the original)*/
+  background: rgba(0, 0, 0, 0)!important; /* semi-transparent black (-Alpha- (0.6) is the original)*/
 }
 
 /* ===============================
    💬 CHANNEL LIST & UNREAD EFFECTS
    =============================== */
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0)!important; /* fully transparent */
 }
 
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1)!important;/* slightly visible on hover */
 }
+
 
 /* ===============================
    🟢 SELECTED / ACTIVE CHANNELS
    =============================== */
 #app-mount .modeSelected__2ea32 .link__2ea32 {
-  background-color: rgba(var(--accent-color-1), 0.2); /* darker/lower alpha for better readability */
-  border-left: 2px solid rgba(var(--accent-color-1), 0.8); /* slightly less bright border */
+  background-color: rgba(var(--accent-color-1), 0.2)!important; /* darker/lower alpha for better readability */
+  border-left: 2px solid rgba(var(--accent-color-1), 0.8)!important; /* slightly less bright border */
 }
 
 /* ===============================
    🧭 SIDEBAR / SERVER LIST
    =============================== */
 .wrapper__XXX .guilds__XXX {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5)!important;
 }
 
 /* ===============================
    🔠 TEXT, FONTS, ICONS
    =============================== */
 #app-mount .name__2ea32 {
-  color: rgb(var(--normal-font));
+  color: rgb(var(--normal-font))!important;
   font-weight: 600;
 }
 #app-mount .modeUnreadImportant__2ea32 .name__2ea32 {
-  color: rgb(var(--fullwhite-font));
+  color: rgb(var(--fullwhite-font))!important;
 }
 
 /* ==========================================/*===============================*/
-*/ =====🌈 STATUS GLOW EFFECTS FOR USER AVATARS ⚙️ ========⚙️ MISC STYLING / EXPERIMENTAL ⚙️ ========*/
+*/🌈 STATUS GLOW EFFECTS FOR USER AVATARS========⚙️ MISC STYLING / EXPERIMENTAL*/
 */==========================================*/===============================*/
 
 /* 🟢 ONLINE */
 rect[mask="url(#svg-mask-status-online)"] {
-  filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a);
-  animation: statusGlowOnline 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a)!important;
+  animation: statusGlowOnline 2s infinite ease-in-out!important;
 }
 @keyframes statusGlowOnline {
   0%, 100% {
-    filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a);
+    filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a)!important;
   }
   50% {
-    filter: drop-shadow(0 0 8px #43a25a) drop-shadow(0 0 16px #43a25a);
+    filter: drop-shadow(0 0 8px #43a25a) drop-shadow(0 0 16px #43a25a)!important;
   }
 }
 
 /* 🌙 IDLE */
 rect[mask="url(#svg-mask-status-idle)"] {
-  filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a);
-  animation: statusGlowIdle 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a)!important;
+  animation: statusGlowIdle 2s infinite ease-in-out!important;
 }
 @keyframes statusGlowIdle {
   0%, 100% {
-    filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a);
+    filter: drop-shadow(0 0 4px #faa81a) drop-shadow(0 0 8px #faa81a)!important;
   }
   50% {
-    filter: drop-shadow(0 0 8px #faa81a) drop-shadow(0 0 16px #faa81a);
+    filter: drop-shadow(0 0 8px #faa81a) drop-shadow(0 0 16px #faa81a)!important;
   }
 }
 
 /* 🔴 DO NOT DISTURB */
 rect[mask="url(#svg-mask-status-dnd)"] {
-  filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245);
-  animation: statusGlowDND 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245)!important;
+  animation: statusGlowDND 2s infinite ease-in-out!important;
 }
 @keyframes statusGlowDND {
   0%, 100% {
-    filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245);
+    filter: drop-shadow(0 0 4px #ed4245) drop-shadow(0 0 8px #ed4245)!important;
   }
   50% {
-    filter: drop-shadow(0 0 8px #ed4245) drop-shadow(0 0 16px #ed4245);
+    filter: drop-shadow(0 0 8px #ed4245) drop-shadow(0 0 16px #ed4245)!important;
   }
 }
 
 /* ⚫ INVISIBLE */
 rect[mask="url(#svg-mask-status-invisible)"] {
-  filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c);
-  animation: statusGlowInvisible 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c)!important;
+  animation: statusGlowInvisible 2s infinite ease-in-out!important;
 }
 @keyframes statusGlowInvisible {
   0%, 100% {
-    filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c);
+    filter: drop-shadow(0 0 4px #4f545c) drop-shadow(0 0 8px #4f545c)!important;
   }
   50% {
-    filter: drop-shadow(0 0 8px #4f545c) drop-shadow(0 0 16px #4f545c);
+    filter: drop-shadow(0 0 8px #4f545c) drop-shadow(0 0 16px #4f545c)!important;
   }
 }
 
