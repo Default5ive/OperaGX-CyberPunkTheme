@@ -766,7 +766,7 @@ html #app-mount:before,
 }
 .messagesWrapper__36d07 .contents__201d5.buttonInner__34c2c:hover {
   border: var(--border-color-accent-1);
-  background: rgba(0,0,0, 0.5) !important;
+  background: rgba(var(--accent-color-1), 0.4) !important;
 }
 
 #app-mount :where(.containerDefault-3GGEv_,
