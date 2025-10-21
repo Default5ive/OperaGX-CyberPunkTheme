@@ -1,8 +1,35 @@
+/**
+ * @name CyberPunk_Theme
+ * @author Default5ive
+*/
+/* theme entry point */
+
+@import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
+
 :root {
   --border-color-accent-1: 1px solid
     rgba(var(--accent-color-1), var(--border-brightness));
   /* Common Backgrounds */
   --opera-gx-bg-1: url(https://files.catbox.moe/v1f8yz.webp);
+}
+
+:root {
+    /* glow radial status */
+    --rs-small-spacing: 0px;
+    --rs-medium-spacing: 0px;
+    --rs-large-spacing: 0px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3.5px;
+    --rs-large-width: 4.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #1df594;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-invisible-color: #636b75;
+    --rs-phone-visible: block; /* set to none if you want to hide the mobile icon */
+    --rs-phone-color: var(--rs-online-color);
 }
 
 .theme-light,
@@ -3182,27 +3209,6 @@ code.inline {
   color: rgb(var(--fullwhite-font));
 }
 
-/* ==========================================/*===============================*/
-*/🌈 STATUS GLOW EFFECTS FOR USER AVATARS========⚙️ MISC STYLING / EXPERIMENTAL*/
-*/==========================================*/===============================*/
-
-/* Neon Glow for Avatar Statuses */
-.pointerEvents__44b0c[mask*="status-online"] {
-    fill: #1df594 !important; /* online green */
-    filter: drop-shadow(0 0 6px #1df594) drop-shadow(0 0 10px #1df594);
-}
-
-.pointerEvents__44b0c[mask*="status-idle"] {
-    fill: #faa61a !important; /* idle orange */
-    filter: drop-shadow(0 0 6px #faa61a) drop-shadow(0 0 10px #faa61a);
-}
-
-.pointerEvents__44b0c[mask*="status-dnd"] {
-    fill: #f04747 !important; /* DND red */
-    filter: drop-shadow(0 0 6px #f04747) drop-shadow(0 0 10px #f04747);
-}
-
-.pointerEvents__44b0c[mask*="status-invisible"] {
-    fill: #636b75 !important; /* invisible gray */
-    filter: drop-shadow(0 0 6px #636b75) drop-shadow(0 0 10px #636b75);
-}
+/*===============================*/
+====⚙️ MISC STYLING / EXPERIMENTAL*/
+/===============================*/
