@@ -1301,8 +1301,8 @@ html #app-mount:before,
 
 /* Main context menu border*/
 .menu_c1e9c4 {
-  background-color: rgb(var(255,255,255));
-  border: var(255,255,255);
+  background-color: rgb(var(--darker-background-color));
+  border: var(--border-color-accent-1);
   box-shadow: none;
   -webkit-box-shadow: none;
   max-height: calc(100vh - 51px);
