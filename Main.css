@@ -3140,10 +3140,10 @@ code.inline {
    💬 CHANNEL LIST & UNREAD EFFECTS
    =============================== */
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32 {
-  background-color: rgba(var(0,0,0), 0.15);
+  background-color: rgba(var(0,0,0), 0);
 }
 #app-mount .modeUnreadImportant__2ea32 .link__2ea32:hover {
-  background-color: rgba(var(127.5,0,0), 0.25);
+  background-color: rgba(var(127.5,0,0), 0);
 }
 
 /* ===============================
