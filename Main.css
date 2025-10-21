@@ -1243,7 +1243,7 @@ html #app-mount:before,
 /* Chat window (and search)*/
 .chatContent_f75fb0,
 .searchResultsWrap_a9e706 {
-  background-color: rgba(var(--chat-transparency-color), var(--chat-transparency)) !important;
+  background-color: rgba(0,0,0, 0.5)!important;
   -webkit-backdrop-filter: blur(var(--chat-background-blur)) !important;
   backdrop-filter: blur(var(--chat-background-blur)) !important;
 }
