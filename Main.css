@@ -3186,28 +3186,27 @@ code.inline {
 */🌈 STATUS GLOW EFFECTS FOR USER AVATARS========⚙️ MISC STYLING / EXPERIMENTAL*/
 */==========================================*/===============================*/
 
-/* ONLINE neon glow */
+/* ONLINE */
 rect[mask*="status-online"] {
-  filter: drop-shadow(0 0 4px #43a25a) drop-shadow(0 0 8px #43a25a) !important;
+  fill: #43a25a !important;
   transform: scale(1.1);
 }
 
-/* IDLE neon glow */
+/* IDLE */
 rect[mask*="status-idle"] {
-  filter: drop-shadow(0 0 4px #faa61a) drop-shadow(0 0 8px #faa61a) !important;
+  fill: #faa61a !important;
   transform: scale(1.1);
 }
 
-/* DND neon glow */
+/* DND */
 rect[mask*="status-dnd"] {
-  filter: drop-shadow(0 0 4px #f04747) drop-shadow(0 0 8px #f04747) !important;
+  fill: #f04747 !important;
   transform: scale(1.1);
 }
 
-/* INVISIBLE / OFFLINE neon glow */
+/* INVISIBLE / OFFLINE */
 rect[mask*="status-invisible"],
 rect[mask*="status-offline"] {
-  filter: drop-shadow(0 0 4px #747f8d) drop-shadow(0 0 8px #747f8d) !important;
+  fill: #747f8d !important;
   transform: scale(1.1);
 }
-
